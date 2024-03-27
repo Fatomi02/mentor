@@ -952,16 +952,16 @@ section {
 /*--------------------------------------------------------------
 # Cource Details Tabs
 --------------------------------------------------------------*/
-.cource-details-tabs {
+.techniques-details-tabs {
   overflow: hidden;
   padding-top: 0;
 }
 
-.cource-details-tabs .nav-tabs {
+.techniques-details-tabs .nav-tabs {
   border: 0;
 }
 
-.cource-details-tabs .nav-link {
+.techniques-details-tabs .nav-link {
   border: 0;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
@@ -972,41 +972,41 @@ section {
   font-size: 15px;
 }
 
-.cource-details-tabs .nav-link:hover {
+.techniques-details-tabs .nav-link:hover {
   color: #5fcf80;
 }
 
-.cource-details-tabs .nav-link.active {
+.techniques-details-tabs .nav-link.active {
   color: #5fcf80;
   border-color: #5fcf80;
 }
 
-.cource-details-tabs .tab-pane.active {
+.techniques-details-tabs .tab-pane.active {
   animation: fadeIn 0.5s ease-out;
 }
 
-.cource-details-tabs .details h3 {
+.techniques-details-tabs .details h3 {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #37423b;
 }
 
-.cource-details-tabs .details p {
+.techniques-details-tabs .details p {
   color: #777777;
 }
 
-.cource-details-tabs .details p:last-child {
+.techniques-details-tabs .details p:last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 992px) {
-  .cource-details-tabs .nav-link {
+  .techniques-details-tabs .nav-link {
     border: 0;
     padding: 15px;
   }
 
-  .cource-details-tabs .nav-link.active {
+  .techniques-details-tabs .nav-link.active {
     color: #fff;
     background: #5fcf80;
   }
@@ -1393,4 +1393,62 @@ section {
   background: #3ac162;
   color: #fff;
   text-decoration: none;
+}
+
+
+
+.button {
+  border: none;
+}
+.button i {
+  pointer-events: none;
+}
+.button:disabled {
+  color: #b3b3b3;
+  pointer-events: none;
+}
+.button,
+.link {
+  height: 45px;
+  width: 45px;
+  font-size: 20px;
+  color: #666666;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.links {
+  column-gap: 12px;
+}
+.link {
+  font-weight: 500;
+  text-decoration: none;
+}
+.button:hover,
+.link:hover {
+  color: #fff;
+  background: #4070f4;
+}
+.link.activeIndex {
+  color: #fff;
+  background: #4070f4;
+}
+.button,
+.links,
+.paginations,
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginations {
+  padding: 20px;
+  border-radius: 8px;
+  column-gap: 12px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.techniques{
+  padding-top: 40px;
 }
